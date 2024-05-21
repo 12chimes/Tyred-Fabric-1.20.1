@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tyred",
+	"version": "${version}",
+	"name": "Tyred",
+	"description": "Adds roads and tyres",
+	"authors": [
+		"midnight"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/tyred/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.midnight.tyred.Tyred"
+		],
+		"client": [
+			"net.midnight.tyred.TyredClient"
+		],
+		"fabric-datagen": [
+			"net.midnight.tyred.TyredDataGenerator"
+		]
+	},
+	"mixins": [
+		"tyred.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
